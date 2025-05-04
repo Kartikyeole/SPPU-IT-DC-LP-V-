@@ -1,5 +1,4 @@
-
-import java.rmi.*;
+import java.rmi.*;import java.rmi.*;
 import java.util.Scanner;
 
 public class Client {
@@ -8,6 +7,7 @@ public class Client {
         try {
             String serverURL = "rmi://localhost/Server";
             ServerIntf serverIntf = (ServerIntf) Naming.lookup(serverURL);
+            System.out.println("Server bound to RMI registry.");
             System.out.print("Enter First Number: ");
             double num1 = sc.nextDouble();
             System.out.print("Enter Second Number: ");
